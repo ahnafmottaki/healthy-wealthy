@@ -18,6 +18,7 @@
         /* colors */
         --color-mild-black: #111111;
         --color-primary: rgba(23, 152, 0, 1);
+        --color-secondary: rgba(239, 235, 227, 1);
         /* text-sizes */
         --text-banner-heading-desktop: 3.5rem;
         --text-banner-heading-mobile: 2rem;
@@ -38,6 +39,10 @@
 
       .regular-btn {
         @apply text-xl text-white font-normal py-2 px-6 rounded-lg bg-primary;
+      }
+
+      .regular-heading {
+        @apply font-semibold text-2xl sm:text-4xl text-primary mb-8 sm:mb-12;
       }
     </style>
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
@@ -115,6 +120,65 @@
           </div>
         </div>
       </header>
+
+      <!-- ! Services Section -->
+      <section class="sm:py-35 py-12 px-4 sm:px-0 max-inline">
+        <h3 class="regular-heading">Services</h3>
+        <!-- THe Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-[20px] sm:gap-6">
+          <!-- Single Item -->
+          <div
+            class="bg-secondary rounded-xl px-[26px] pt-[26px] pb-9 sm:px-8 sm:pt-8 sm:pb-11 flex flex-col items-center"
+          >
+            <div class="bg-white rounded-full sm:p-[25px] p-[21px]">
+              <img src="assets/service.png" alt="Service Image" />
+            </div>
+            <h4
+              class="font-semibold sm:text-2xl text-[1.25rem] mt-[20px] mb-[10px] sm:mt-6 sm:mb-3"
+            >
+              24/7 Services
+            </h4>
+            <p class="font-light sm:text-xl text-base text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+          <!-- Single Item -->
+          <div
+            class="bg-secondary rounded-xl px-[26px] pt-[26px] pb-9 sm:px-8 sm:pt-8 sm:pb-11 flex flex-col items-center"
+          >
+            <div class="bg-white rounded-full sm:p-[25px] p-[21px]">
+              <img src="assets/delivery.png" alt="Delivery Image" />
+            </div>
+            <h4
+              class="font-semibold sm:text-2xl text-[1.25rem] mt-[20px] mb-[10px] sm:mt-6 sm:mb-3"
+            >
+              Fast Delivery
+            </h4>
+            <p class="font-light sm:text-xl text-base text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+          <!-- Single Item -->
+          <div
+            class="bg-secondary rounded-xl px-[26px] pt-[26px] pb-9 sm:px-8 sm:pt-8 sm:pb-11 flex flex-col items-center"
+          >
+            <div class="bg-white rounded-full sm:p-[25px] p-[21px]">
+              <img src="assets/healthy.png" alt="Healthy Image" />
+            </div>
+            <h4
+              class="font-semibold sm:text-2xl text-[1.25rem] mt-[20px] mb-[10px] sm:mt-6 sm:mb-3"
+            >
+              Healthy Products
+            </h4>
+            <p class="font-light sm:text-xl text-base text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
