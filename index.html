@@ -44,6 +44,10 @@
       .regular-heading {
         @apply font-semibold text-2xl sm:text-4xl text-primary mb-8 sm:mb-12;
       }
+
+      .top-bottom-pad {
+        @apply sm:py-35 py-12 px-4 sm:px-0;
+      }
     </style>
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
   </head>
@@ -122,10 +126,12 @@
       </header>
 
       <!-- ! Services Section -->
-      <section class="sm:py-35 py-12 px-4 sm:px-0 max-inline">
+      <section class="top-bottom-pad max-inline">
         <h3 class="regular-heading">Services</h3>
         <!-- THe Services Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-[20px] sm:gap-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-3 gap-[20px] sm:gap-6 auto-rows-fr"
+        >
           <!-- Single Item -->
           <div
             class="bg-secondary rounded-xl px-[26px] pt-[26px] pb-9 sm:px-8 sm:pt-8 sm:pb-11 flex flex-col items-center"
@@ -139,8 +145,8 @@
               24/7 Services
             </h4>
             <p class="font-light sm:text-xl text-base text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              Provide excellent customer service and build customer loyalty by
+              delivering food in a timely, cordial manner
             </p>
           </div>
           <!-- Single Item -->
@@ -156,8 +162,8 @@
               Fast Delivery
             </h4>
             <p class="font-light sm:text-xl text-base text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              Deliver orders within an optimal period of time, ensuring
+              freshness of food and respect for customer preferences
             </p>
           </div>
           <!-- Single Item -->
@@ -173,12 +179,64 @@
               Healthy Products
             </h4>
             <p class="font-light sm:text-xl text-base text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              Ensuring that food is handled and transported safely, and that
+              customers are informed about allergens and food safety
             </p>
           </div>
         </div>
       </section>
+
+      <!-- section wrapper -->
+      <div class="relative -z-10 bg-secondary">
+        <!-- Popular Products Section -->
+
+        <section class="top-bottom-pad max-inline">
+          <h3 class="regular-heading">Popular Products</h3>
+          <!-- grid corner -->
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-[1fr_2fr]">
+            <!-- left column -->
+            <div
+              class="min-h-[424px] pt-15 pl-10 relative rounded-lg overflow-hidden"
+            >
+              <!-- background gradient -->
+              <div
+                class="absolute inset-0 bg-[linear-gradient(135deg,#53DB3A,white)] -z-20"
+              ></div>
+              <!-- background image -->
+              <div class="absolute bottom-0 right-0 w-3/5 -z-10">
+                <img src="assets/vegetable-offer.png" alt="Offer image" />
+              </div>
+              <div class="relative z-10">
+                <h3 class="font-bold text-3xl text-white">30% off</h3>
+                <p class="text-sm font-light mt-8 mb-6">
+                  Discover a world of treats, toys and essential handpicked for
+                </p>
+                <button
+                  class="bg-white text-black font-medium text-xl py-2 px-6 rounded-lg"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <!-- right column -->
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 sm:grid-rows-3 sm:gap-6 gap-[14px]"
+            >
+              <!-- single item -->
+              <div class="flex gap-4">
+                <!-- item image container  -->
+                <div>
+                  <img src="assets/image 44.png" alt="vegetable image" />
+                </div>
+                <!-- item content -->
+                <div class="flex-1">
+                  <div>Item content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </body>
 </html>
