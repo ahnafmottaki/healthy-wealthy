@@ -4,21 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 03 | Nature's Platter</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/fb9ffdad9e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
       @theme {
-        --color-clifford: #da373d;
+        --font-sora: "Sora", serif;
+        --font-poppins: "Poppins", serif;
+        /* colors */
+        --color-mild-black: #111111;
+        --color-primary: rgba(23, 152, 0, 1);
+        /* text-sizes */
+        --text-banner-heading-desktop: 3.5rem;
+        --text-banner-heading-mobile: 2rem;
+
+        /* spacing */
+        --spacing-wrapper: 1600px;
+        --spacing-main: 1320px;
+        --spacing-banner-top: 90px;
+      }
+
+      .max-inline {
+        @apply max-w-main mx-auto;
+      }
+
+      .common-text {
+        @apply sm:text-xl font-light sm:font-normal;
+      }
+
+      .regular-btn {
+        @apply text-xl text-white font-normal py-2 px-6 rounded-lg bg-primary;
       }
     </style>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline text-clifford">Hello world!</h1>
-    <button class="btn btn-primary">Primary</button>
+  <body class="font-sora text-mild-black">
+    <!-- * Wrapper  -->
+    <div class="max-w-wrapper mx-auto">
+      <!-- ! Header Section -->
+      <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
+        <!-- Navbar -->
+        <nav
+          class="max-inline flex items-center justify-between sm:pt-6 py-3 px-4 sm:px-0 border-b border-primary sm:border-none"
+        >
+          <!-- logo container  -->
+          <div>
+            <img
+              src="assets/logo-header.png"
+              class="sm:block hidden"
+              alt="Logo Image"
+            />
+            <img src="assets/Group.png" alt="Logo Image" class="sm:hidden" />
+          </div>
+          <!-- navbar links container-->
+          <div class="hidden sm:flex gap-[110px] items-center">
+            <!-- links -->
+            <ul class="flex gap-8">
+              <li>
+                <a href="#product" class="common-text">Product</a>
+              </li>
+              <li>
+                <a href="#services" class="common-text">Services</a>
+              </li>
+              <li>
+                <a href="#contact-us" class="common-text">Contact Us</a>
+              </li>
+            </ul>
+            <!-- nav Buttons  -->
+            <div class="flex gap-8 items-center">
+              <div class="space-x-6 text-2xl">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div class="flex gap-3">
+                <button
+                  class="common-text px-6 py-2 border border-1 border-primary rounded-lg"
+                >
+                  Login</button
+                ><button class="regular-btn">Register</button>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile nav -->
+          <div class="flex-1 sm:hidden flex justify-end text-3xl text-primary">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+
+        <!-- Banner Section -->
+        <div class="max-inline">
+          <h2
+            class="sm:text-banner-heading-desktop text-banner-heading-mobile max-w-[341px] mx-auto sm:max-w-none mt-12 sm:mt-banner-top mb-4 sm:mb-8 font-semibold text-center"
+          >
+            Freshness <span class="text-primary">You Can</span> <br />
+            <span class="text-primary">Count</span> On, Prices You&apos;ll Love!
+          </h2>
+          <p
+            class="common-text text-center max-w-[350px] sm:max-w-[800px] mx-auto"
+          >
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we&apos;ve got you covered every day!
+          </p>
+          <!-- banner image  -->
+          <div class="flex justify-center sm:mt-9 mt-4">
+            <img src="assets/hero-vegetables.png" alt="Hero Image" />
+          </div>
+        </div>
+      </header>
+    </div>
   </body>
 </html>
