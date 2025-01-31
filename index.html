@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,7 @@
       }
 
       .regular-btn {
-        @apply sm:text-xl text-sm text-white font-normal py-2 px-6 rounded-lg bg-primary;
+        @apply sm:text-xl text-sm text-white font-normal py-2 px-6 rounded-lg bg-primary hover:bg-green-900 cursor-pointer transition-all;
       }
 
       .regular-heading {
@@ -76,24 +76,40 @@
             <!-- links -->
             <ul class="flex gap-8">
               <li>
-                <a href="#product" class="common-text">Product</a>
+                <a
+                  href="#product"
+                  class="common-text hover:text-primary transition-colors"
+                  >Product</a
+                >
               </li>
               <li>
-                <a href="#services" class="common-text">Services</a>
+                <a
+                  href="#services"
+                  class="common-text hover:text-primary transition-colors"
+                  >Services</a
+                >
               </li>
               <li>
-                <a href="#contact-us" class="common-text">Contact Us</a>
+                <a
+                  href="#contact-us"
+                  class="common-text hover:text-primary transition-colors"
+                  >Contact Us</a
+                >
               </li>
             </ul>
             <!-- nav Buttons  -->
             <div class="flex gap-8 items-center">
               <div class="space-x-6 text-2xl">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i
+                  class="fa-solid fa-magnifying-glass hover:scale-105 cursor-pointer hover:text-primary transition-colors"
+                ></i>
+                <i
+                  class="fa-solid fa-cart-shopping hover:scale-105 cursor-pointer hover:text-primary transition-colors"
+                ></i>
               </div>
               <div class="flex gap-3">
                 <button
-                  class="common-text px-6 py-2 border border-1 border-primary rounded-lg"
+                  class="common-text px-6 py-2 border border-1 border-primary rounded-lg hover:bg-primary hover:text-white transition-all cursor-pointer"
                 >
                   Login</button
                 ><button class="regular-btn">Register</button>
@@ -128,7 +144,7 @@
       </header>
 
       <!-- ! Services Section -->
-      <section class="top-bottom-pad max-inline">
+      <section id="services" class="top-bottom-pad max-inline">
         <h3 class="regular-heading">Services</h3>
         <!-- THe Services Grid -->
         <div
@@ -189,15 +205,15 @@
       </section>
 
       <!-- section wrapper -->
-      <div class="relative -z-10 bg-secondary">
+      <div class="bg-secondary">
         <!-- ! Popular Products Section -->
-        <section class="top-bottom-pad max-inline">
+        <section id="product" class="top-bottom-pad max-inline">
           <h3 class="regular-heading">Popular Products</h3>
           <!-- grid corner -->
           <div class="grid grid-cols-1 gap-6 sm:grid-cols-[1fr_2fr]">
             <!-- left column -->
             <div
-              class="sm:min-h-[424px] min-h-[340px] sm:pt-15 pt-10 sm:pl-10 pl-7 relative rounded-lg overflow-hidden"
+              class="sm:min-h-[424px] min-h-[340px] sm:pt-15 pt-10 sm:pl-10 pl-7 relative z-10 rounded-lg overflow-hidden"
             >
               <!-- background gradient -->
               <div
@@ -215,7 +231,7 @@
                   Discover a world of treats, toys and essential handpicked for
                 </p>
                 <button
-                  class="bg-white text-black font-medium text-xl py-2 px-6 rounded-lg"
+                  class="bg-white text-black font-medium text-xl py-2 px-6 rounded-lg cursor-pointer hover:text-white hover:bg-primary transition-all"
                 >
                   Buy Now
                 </button>
@@ -227,7 +243,7 @@
             >
               <!-- single item -->
               <div
-                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer"
+                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer hover:scale-105 transition-all"
               >
                 <!-- item image container  -->
                 <div
@@ -255,7 +271,7 @@
               </div>
               <!-- single item -->
               <div
-                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer"
+                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer hover:scale-105 transition-all"
               >
                 <!-- item image container  -->
                 <div
@@ -283,7 +299,7 @@
               </div>
               <!-- single item -->
               <div
-                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer"
+                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer hover:scale-105 transition-all"
               >
                 <!-- item image container  -->
                 <div
@@ -311,7 +327,7 @@
               </div>
               <!-- single item -->
               <div
-                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer"
+                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer hover:scale-105 transition-all"
               >
                 <!-- item image container  -->
                 <div
@@ -339,7 +355,7 @@
               </div>
               <!-- single item -->
               <div
-                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer"
+                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer hover:scale-105 transition-all"
               >
                 <!-- item image container  -->
                 <div
@@ -367,7 +383,7 @@
               </div>
               <!-- single item -->
               <div
-                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer"
+                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer hover:scale-105 transition-all"
               >
                 <!-- item image container  -->
                 <div
@@ -395,7 +411,7 @@
               </div>
               <!-- single item -->
               <div
-                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer"
+                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer hover:scale-105 transition-all"
               >
                 <!-- item image container  -->
                 <div
@@ -423,7 +439,7 @@
               </div>
               <!-- single item -->
               <div
-                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer"
+                class="bg-white flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer hover:scale-105 transition-all"
               >
                 <!-- item image container  -->
                 <div
@@ -451,7 +467,7 @@
               </div>
               <!-- single item -->
               <div
-                class="bg-white sm:flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer hidden"
+                class="bg-white sm:flex sm:gap-4 gap-[10px] sm:py-4 py-[10px] sm:pl-4 pl-[10px] sm:pr-[10px] pr-[6px] rounded-lg cursor-pointer hidden hover:scale-105 transition-all"
               >
                 <!-- item image container  -->
                 <div
@@ -554,7 +570,7 @@
               Exclusive training tips, ticks, product deals and more.
             </p>
             <input
-              class="bg-white text-sm sm:text-base leading-8 text-[#C4C4C4] sm:p-[18px] py-[6px] pl-2 block rounded-lg sm:my-9 mt-5 mb-3 sm:w-7/10 w-full"
+              class="bg-white text-sm sm:text-base leading-8 placeholder:text-[#C4C4C4] sm:p-[18px] py-[6px] pl-2 block rounded-lg sm:my-9 mt-5 mb-3 sm:w-7/10 w-full focus:outline-primary"
               placeholder="Enter email...."
               type="email"
               name="visitor-email"
@@ -562,8 +578,9 @@
             /><button class="regular-btn block">Subscribe</button>
           </div>
           <!-- section image container -->
-          <div class="place-self-center p-8 sm:p-0">
+          <div class="place-self-center py-4 sm:p-0">
             <img
+              class="max-w-[294px] sm:max-w-full"
               src="assets/vegetable-busket.png"
               alt="vegetable offer image"
             />
@@ -591,9 +608,23 @@
           <ul
             class="sm:text-[1.25rem] text-base sm:text-secondary sm:space-y-8 space-y-5 mb-9 sm:mb-0"
           >
-            <li><a href="#product">Product</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact-us">Contact-us</a></li>
+            <li>
+              <a href="#product" class="hover:text-slate-300 transition-colors"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="hover:text-slate-300 transition-colors"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact-us"
+                class="hover:text-slate-300 transition-colors"
+                >Contact-us</a
+              >
+            </li>
           </ul>
           <!-- third section -->
           <div>
@@ -606,13 +637,23 @@
               <img
                 src="assets/social-icons/facebook.png"
                 alt="facebook logo"
-              /><img
+                class="hover:scale-105 transition-transform cursor-pointer"
+              />
+              <img
                 src="assets/social-icons/instagram.png"
                 alt="instagram logo"
-              /><img
+                class="hover:scale-105 transition-transform cursor-pointer"
+              />
+              <img
                 src="assets/social-icons/linked-in.png"
                 alt="linked in logo"
-              /><img src="assets/social-icons/youtube.png" alt="youtube logo" />
+                class="hover:scale-105 transition-transform cursor-pointer"
+              />
+              <img
+                src="assets/social-icons/youtube.png"
+                alt="youtube logo"
+                class="hover:scale-105 transition-transform cursor-pointer"
+              />
             </div>
             <div></div>
           </div>
