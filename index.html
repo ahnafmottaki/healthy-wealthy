@@ -31,6 +31,55 @@
         --spacing-wrapper: 1600px;
         --spacing-main: 1320px;
         --spacing-banner-top: 90px;
+
+        /* animations */
+        --animate-fadeIn: fadeIn 2s ease-in-out;
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        --animate-slideInRight: slideInRight 1s ease-out;
+
+        @keyframes slideInRight {
+          from {
+            opacity: 0;
+            transform: translateX(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        --animate-bounce: bounce 1.5s ease-in-out infinite;
+
+        @keyframes bounce {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-5px);
+          }
+        }
+
+        --animate-slideIn: slideIn 1s ease-out;
+
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateX(-50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
       }
 
       .max-inline {
@@ -125,31 +174,33 @@
         </nav>
 
         <!-- Banner Section -->
-        <div class="max-inline">
+        <div class="max-inline animate-fadeIn">
           <h2
-            class="sm:text-banner-heading-desktop text-banner-heading-mobile max-w-[341px] mx-auto sm:max-w-none mt-12 sm:mt-banner-top mb-4 sm:mb-8 font-semibold text-center"
+            class="sm:text-banner-heading-desktop text-banner-heading-mobile max-w-[341px] mx-auto sm:max-w-none mt-12 sm:mt-banner-top mb-4 sm:mb-8 font-semibold text-center animate-slideIn"
           >
             Freshness <span class="text-primary">You Can</span> <br />
             <span class="text-primary">Count</span> On, Prices You&apos;ll Love!
           </h2>
           <p
-            class="common-text text-center max-w-[350px] sm:max-w-[800px] mx-auto"
+            class="common-text text-center max-w-[350px] sm:max-w-[800px] mx-auto animate-slideInRight"
           >
             Shop your daily essentials at unbeatable prices. From fresh produce
             to pantry staples, we&apos;ve got you covered every day!
           </p>
           <!-- banner image  -->
+          <!-- transition-transform duration-300 hover:rotate-6 -->
           <div class="flex justify-center sm:mt-9 mt-4">
-            <img src="assets/hero-vegetables.png" alt="Hero Image" />
+            <img
+              src="assets/hero-vegetables.png"
+              class="animate-bounce"
+              alt="Hero Image"
+            />
           </div>
         </div>
       </header>
 
       <!-- ! Services Section -->
-      <section
-        id="services"
-        class="px-4 sm:px-0 pt-12 sm:pt-35 pb-12 max-inline"
-      >
+      <section id="services" class="top-bottom-pad max-inline">
         <h3 class="regular-heading">Services</h3>
         <!-- THe Services Grid -->
         <div
