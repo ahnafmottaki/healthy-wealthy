@@ -40,7 +40,7 @@
       }
 
       .regular-btn {
-        @apply text-xl text-white font-normal py-2 px-6 rounded-lg bg-primary;
+        @apply sm:text-xl text-sm text-white font-normal py-2 px-6 rounded-lg bg-primary;
       }
 
       .regular-heading {
@@ -236,7 +236,7 @@
                   <img
                     src="assets/image 44.png"
                     alt="vegetable image"
-                    class="max-w-[43.75px] aspect-square sm:max-w-full rounded-xl"
+                    class="max-w-[43.75px] aspect-square sm:max-w-full rounded-lg"
                   />
                 </div>
                 <!-- item content -->
@@ -530,6 +530,46 @@
           </div>
         </div>
       </section>
+
+      <!-- grocery news section wrapper -->
+      <div
+        class="px-4 sm:px-0 bg-[linear-gradient(to_bottom,#FFFFFF_0%,#FFFFFF_50%,#179800_50%,#179800_100%)]"
+      >
+        <!-- !grocery news section -->
+        <section
+          class="max-inline gap-2 sm:gap-0 sm:py-14 grid grid-cols-1 sm:grid-cols-2 sm:rounded-3xl rounded-2xl bg-secondary auto-rows-fr"
+        >
+          <!-- section content -->
+          <div
+            class="sm:self-center sm:block flex flex-col items-center order-1 px-5 sm:px-0"
+          >
+            <h4
+              class="sm:font-semibold text-primary sm:text-inherit font-bold sm:text-4xl text-2xl"
+            >
+              Get Grocery News!
+            </h4>
+            <p
+              class="font-normal sm:text-[1.25rem] text-base text-center sm:text-start sm:mt-6 mt-3"
+            >
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <input
+              class="bg-white text-sm sm:text-base leading-8 text-[#C4C4C4] sm:p-[18px] py-[6px] pl-2 block rounded-lg sm:my-9 mt-5 mb-3 sm:w-7/10 w-full"
+              placeholder="Enter email...."
+              type="email"
+              name="visitor-email"
+              id="visitor-email"
+            /><button class="regular-btn block">Subscribe</button>
+          </div>
+          <!-- section image container -->
+          <div class="place-self-center p-8 sm:p-0">
+            <img
+              src="assets/vegetable-busket.png"
+              alt="vegetable offer image"
+            />
+          </div>
+        </section>
+      </div>
 
       <!-- footer wrapper -->
       <div class="bg-primary">
