@@ -17,6 +17,8 @@
         --font-poppins: "Poppins", serif;
         /* colors */
         --color-mild-black: #111111;
+        --color-grad-one: rgba(0, 0, 0, 0.2);
+        --color-grad-two: rgba(0, 0, 0, 0.03);
         --color-primary: rgba(23, 152, 0, 1);
         --color-offer-one: rgba(17, 84, 20, 1);
         --color-secondary: rgba(239, 235, 227, 1);
@@ -144,7 +146,10 @@
       </header>
 
       <!-- ! Services Section -->
-      <section id="services" class="top-bottom-pad max-inline">
+      <section
+        id="services"
+        class="px-4 sm:px-0 pt-12 sm:pt-35 pb-12 max-inline"
+      >
         <h3 class="regular-heading">Services</h3>
         <!-- THe Services Grid -->
         <div
@@ -203,6 +208,35 @@
           </div>
         </div>
       </section>
+
+      <!-- !First Order Section -->
+      <div class="bg-grad-two">
+        <section
+          class="py-14 sm:py-0 max-inline sm:h-[600px] sm:flex flex-col justify-center items-center bg-none sm:bg-[url('./assets/discount-first.png')] bg-no-repeat bg-[left_bottom]"
+        >
+          <h2
+            class="font-bold sm:text-5xl text-3xl text-center sm:text-start max-w-4/5 mx-auto sm:mx-0 sm:max-w-full"
+          >
+            Enjoy discounts on your first order
+          </h2>
+          <div
+            class="p-4 bg-white w-4/5 sm:w-auto mx-auto sm:mx-0 flex sm:inline-flex flex-col items-center sm:items-stretch sm:flex-row sm:mt-10 mt-5 rounded-xl shadow-sm sm:gap-5 gap-3"
+          >
+            <input
+              type="text"
+              name="visitor-location"
+              id="visitor-location"
+              class="border-1 rounded-lg border-grad-one py-2 px-3 pl-4 text-sm block w-[250px] sm:w-[500px]"
+              placeholder="Your street and street number"
+            />
+            <button
+              class="bg-primary text-sm text-white font-poppins sm:py-4 py-2 sm:px-4 px-3 rounded-lg hover:bg-green-800 transition-colors cursor-pointer"
+            >
+              <a href="#product"> Find Food</a>
+            </button>
+          </div>
+        </section>
+      </div>
 
       <!-- section wrapper -->
       <div class="bg-secondary">
