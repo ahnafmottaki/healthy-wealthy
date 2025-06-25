@@ -52,7 +52,7 @@ A static site where user can find , filter and select foods based on their needs
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/your-project.git
+git clone https://github.com/FreeCodeJunction/healthy-wealthy.git
 cd your-project
 ```
 
