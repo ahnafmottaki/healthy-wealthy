@@ -1,6 +1,6 @@
 # 🌐 Healthy Wealthy
 
-![Project Screenshot](https://via.placeholder.com/1200x600.png?text=Project+Screenshot)
+![Healthy Wealthy](./healthy-wealthy.png)
 
 ## 🧾 Overview
 
