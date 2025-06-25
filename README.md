@@ -53,7 +53,7 @@ A static site where user can find , filter and select foods based on their needs
 
 ```bash
 git clone https://github.com/FreeCodeJunction/healthy-wealthy.git
-cd your-project
+cd healthy-wealthy
 ```
 
 ### 2. Install Dependencies
