@@ -10,16 +10,14 @@ A static site where user can find , filter and select foods based on their needs
 
 ## Live site & Relavent links
 
-**Live Site URL**: [https://freecodejunction.github.io/biker-zone/](https://freecodejunction.github.io/biker-zone/)
+**Live Site URL**: [https://freecodejunction.github.io/healthy-wealthy/](https://freecodejunction.github.io/healthy-wealthy/)
 
 
 
 ## 🚀 Tech Stack
 
 ### 🔹 Frontend
-- React.js
 - Tailwind CSS
-- React Router DOM
 - Daisyui
 - HTML
 - CSS
@@ -40,7 +38,7 @@ A static site where user can find , filter and select foods based on their needs
   "dependencies": {
     "@tailwindcss/vite": "^4.0.3",
     "tailwindcss": "^4.0.3",
-"@eslint/js": "^9.17.0",
+    "@eslint/js": "^9.17.0",
     "daisyui": "^5.0.0-beta.6",
     "eslint": "^9.17.0",
     "globals": "^15.14.0",
@@ -61,7 +59,7 @@ cd your-project
 ### 2. Install Dependencies
 
 ```bash
-cd biker-zone
+cd healthy-wealthy
 npm install
 ```
 
@@ -71,10 +69,5 @@ npm install
 
 ```bash
 npm run dev
-```
-
-### 5. Visit
-```
-http://localhost:3000
 ```
 
