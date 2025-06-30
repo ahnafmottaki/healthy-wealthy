@@ -10,7 +10,7 @@ A static site where user can find , filter and select foods based on their needs
 
 ## Live site & Relavent links
 
-**Live Site URL**: [https://freecodejunction.github.io/healthy-wealthy/](https://freecodejunction.github.io/healthy-wealthy/)
+**Live Site URL**: [https://ahnafmottaki.github.io/healthy-wealthy/](https://ahnafmottaki.github.io/healthy-wealthy/)
 
 
 
